@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body, div, h2, p {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+
+.button {
+    margin-top: 30px;
+    width: 200px;
+    height: 35px;
+    background-color: teal;
+
+    outline: none;
+    border: 2px dashed whitesmoke;
+    border-radius: 5px;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: #2c3e50;
+
+    transform: scale(1.1, 1.1);
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2em;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+.header {
+    height: 100vh;
+    background-color: teal;
+
+    /* Set the display to flex. */
+    display: flex;
+
+    /* Set the direction to column as we want them to flow vertically. */
+    flex-direction: column;
+
+    /* Justify the content to the vertical center. */
+    justify-content: center;
+
+    /* Align the text to the center horizontally. */
+    text-align: center;
+
+    align-items: center;
+}
+
+.grid {
+    /* Basic setup for the container. */
+    padding: 10px;
+    height: auto;
+    max-width: 100%;
+    background-color: #2c3e50;
+
+    /* Set the display to flex. */
+    display: flex;
+
+    /* Set the direction to row as we want them to flow horizontally. */
+    flex-direction: row;
+
+    /* Set the flex wrap attribute to wrap so that it wraps elements move to the next row when there are too many. */
+    flex-wrap: wrap;
+
+    /* Justify the content to the left so that it follows a left to right pattern. */
+    justify-content: left;
+}
+
+.element {
+    /* Basic element setup. */
+    width: 30%;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+
+    /* Set the display to flex. */
+    display: flex;
+
+    /* 
+     * Set the element inside of the flex grid to have a flex-grow of 1 (optional) 
+     * This will auto size left over elements to fill an entire row.
+     */
+    flex-grow: 1;
+
+    /* Set the direction to column as we want a vertical flow here. */
+    flex-direction: column;
+
+    /* Justify the content centrally. */
+    justify-content: center;
+
+    /* Align the text centrally. */
+    text-align: center;
+
+    /* Align the items centrally (Mainly for the image). */
+    align-items: center;
+
+    /* More random setup. */
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.element h2 {
+    margin-top: 5px;
+    color: #2c3e50 !important;
+}
+
+.element p {
+    color: #2c3e50 !important;
+}
+
+.bgImage {
+    width: 90%;
+    height: 70%;
+    background-image: url('https://picsum.photos/1000/1000');
+    background-repeat: no-repeat;
+
+    border-radius: 5px;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.bgImage:hover {
+    transform: scale(1.02, 1.02);
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
